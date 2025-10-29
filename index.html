@@ -3,93 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ditzz Profile</title>
+  <title>Cerita Dewasa</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #252547);
-      color: #fff;
-      text-align: center;
+      background: #1b1b1b;
+      color: #f1f1f1;
     }
     header {
-      padding: 60px 20px;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #00ffff;
-      object-fit: cover;
+      background: #8b0000;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
     }
     h1 {
-      margin-top: 20px;
+      margin: 0;
       font-size: 2.2em;
     }
-    p {
-      color: #ccc;
-      font-size: 1.1em;
+    nav {
+      background: #111;
+      padding: 10px 0;
+      text-align: center;
     }
-    section {
-      margin: 50px auto;
-      width: 80%;
-      max-width: 700px;
-      text-align: left;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 20px 30px;
-    }
-    h2 {
-      color: #00ffff;
-      border-bottom: 1px solid #00ffff44;
-      padding-bottom: 5px;
-    }
-    a {
-      color: #00ffff;
+    nav a {
+      color: #f1f1f1;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      color: #ff6666;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+    }
+    article {
+      margin-bottom: 40px;
+    }
+    article h2 {
+      color: #ff6666;
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
+      text-align: center;
       color: #888;
+      padding: 20px;
+      background: #111;
+      margin-top: 40px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #8b0000;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #a00000;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://via.placeholder.com/150" alt="Foto Ditzz" />
-    <h1>Ditzz</h1>
-    <p>Web Developer | Designer | Content Creator</p>
+    <h1>Cerita Dewasa</h1>
+    <p>Kumpulan kisah romantis dan perjalanan emosi orang dewasa</p>
   </header>
 
-  <section>
-    <h2>Tentang Saya</h2>
-    <p>
-      Halo! Saya Ditzz, seorang pengembang web yang senang membuat tampilan menarik dan fungsional. 
-      Saya berpengalaman dalam HTML, CSS, JavaScript, dan beberapa framework modern.
-    </p>
-  </section>
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Kategori</a>
+    <a href="#">Tentang</a>
+    <a href="#">Kontak</a>
+  </nav>
 
-  <section>
-    <h2>Proyek Saya</h2>
-    <ul>
-      <li><a href="#">Portfolio Website</a></li>
-      <li><a href="#">Aplikasi To-Do List</a></li>
-      <li><a href="#">Landing Page Produk</a></li>
-    </ul>
-  </section>
+  <div class="container">
+    <article>
+      <h2>Cerita 1: Malam di Bawah Hujan</h2>
+      <p>
+        Sebuah kisah tentang dua orang yang dipertemukan kembali setelah bertahun-tahun berpisah...
+        <a href="#" class="btn">Baca Selengkapnya</a>
+      </p>
+    </article>
 
-  <section>
-    <h2>Kontak</h2>
-    <p>Email: <a href="mailto:ditzz@example.com">ditzz@example.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/ditzz">@ditzz</a></p>
-  </section>
+    <article>
+      <h2>Cerita 2: Aroma Kopi dan Kenangan</h2>
+      <p>
+        Ketika secangkir kopi membawa kembali kenangan lama yang tak pernah benar-benar hilang...
+        <a href="#" class="btn">Baca Selengkapnya</a>
+      </p>
+    </article>
+  </div>
 
   <footer>
-    <p>© 2025 Ditzz. All rights reserved.</p>
+    <p>© 2025 CeritaDewasa.id | Semua hak dilindungi</p>
   </footer>
 </body>
 </html>
