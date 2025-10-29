@@ -1,41 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title></title>
-	<meta charset="utf-8" />
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="Scripts/isRockFx.js"></script>
-    <script>
-        $(function () {
-            $('#ButtonCal').click(
-                function () {
-                    //取得用戶輸入的參數
-                    var para = { 'height': $('#txbHeight').val(), 'weight': $('#txbWeight').val() };
-                    //呼叫API
-                    ExecuteAPI('Example', 'BMI', para,
-			//呼叫WebAPI成功時運行的Call Back Function
-                        function (result) {
-                            alert(result.Data);
-                        }
-                        );
-                }
-                );
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ditzz Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #252547);
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 60px 20px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #00ffff;
+      object-fit: cover;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 2.2em;
+    }
+    p {
+      color: #ccc;
+      font-size: 1.1em;
+    }
+    section {
+      margin: 50px auto;
+      width: 80%;
+      max-width: 700px;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px 30px;
+    }
+    h2 {
+      color: #00ffff;
+      border-bottom: 1px solid #00ffff44;
+      padding-bottom: 5px;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <div class="row" style="margin:10px">
-        <div class="col-md-12">
-            <div class="form-group">
-                身高:
-                <input id="txbHeight" class="form-control" placeholder="請輸入身高" />
-                體重:
-                <input id="txbWeight" class="form-control" placeholder="請輸入體重" />
-                <br />
-                <button class="btn btn-primary" id="ButtonCal">計算</button>
-            </div>
-        </div>
-    </div>
+  <header>
+    <img src="https://via.placeholder.com/150" alt="Foto Ditzz" />
+    <h1>Ditzz</h1>
+    <p>Web Developer | Designer | Content Creator</p>
+  </header>
+
+  <section>
+    <h2>Tentang Saya</h2>
+    <p>
+      Halo! Saya Ditzz, seorang pengembang web yang senang membuat tampilan menarik dan fungsional. 
+      Saya berpengalaman dalam HTML, CSS, JavaScript, dan beberapa framework modern.
+    </p>
+  </section>
+
+  <section>
+    <h2>Proyek Saya</h2>
+    <ul>
+      <li><a href="#">Portfolio Website</a></li>
+      <li><a href="#">Aplikasi To-Do List</a></li>
+      <li><a href="#">Landing Page Produk</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:ditzz@example.com">ditzz@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/ditzz">@ditzz</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Ditzz. All rights reserved.</p>
+  </footer>
 </body>
 </html>
